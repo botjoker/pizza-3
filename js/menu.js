@@ -25,6 +25,31 @@ $(document).ready(function(){
 			count.text(parseInt(count.text()) - 1);
 		}
 	});
+	$('.block-1__count-right').click(function(){
+		var count = $(this).siblings('.block-1__count-center').find('p');
+		var price = parseInt($(this).closest('.block-1__item').find('input[type=radio]:checked').attr('data-price'));
+		var result = $(this).closest('.block-1__item').find('.block-1__price');
+		count.text(parseInt(count.text())+1);
+		result.text('$' + ((parseInt(count.text()))*price) );
+
+	});
+	$('.block-1__count-left').click(function(){
+		var count = $(this).siblings('.block-1__count-center').find('p');
+		var price = parseInt($(this).closest('.block-1__item').find('input[type=radio]:checked').attr('data-price'));
+		var result = $(this).closest('.block-1__item').find('.block-1__price');
+		if(parseInt(count.text())>1) {
+			count.text(parseInt(count.text()) - 1);
+			result.text('$' + ((parseInt(count.text()))*price) );
+		}
+	});
+
+	$('.block-1__item-radio input[type=radio]').change(function(){
+		var count = parseInt($(this).closest('.block-1__item').find('.block-1__count-center').text());
+		var price = parseInt($(this).attr('data-price'));
+		var result = $(this).closest('.block-1__item').find('.block-1__price');
+		result.text('$' + (count*price));
+	});
+
 	//$('.order__count-X').click(function(){
 	//
 	//});
