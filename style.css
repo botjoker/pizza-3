@@ -1291,10 +1291,10 @@ textarea {
 .item {
 	display: inline-block;
 }
-.item__text {
+.order__text {
 	width: 175px;
 }
-.order__text {
+.order__text-text {
 	color: #7f7b76;
 	font-weight: bolder;
 }
