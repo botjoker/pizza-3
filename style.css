@@ -568,6 +568,10 @@ h1 {
 	color: #fff;
 	/* &#10004; */
 }
+.number_page-top {
+    width: 750px;
+    margin: 0 auto;
+}
 .number_page {
 	word-spacing: 6px;
 	color:  #7f7b76;
