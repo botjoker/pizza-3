@@ -1173,6 +1173,10 @@ h1 {
 .block-5 {
 	margin-bottom: 90px;
 }
+.block-5__width {
+	width: 1157px;
+	margin: 0 auto;
+}
 .block-5__title {
 	text-align: center;
 }
@@ -1194,6 +1198,39 @@ h3 {
 }
 .sbros {
 	display: none;
+}
+@media (min-width: 992px) and (max-width: 1222px) {
+	.block-5 {
+		padding-left: 125px;
+	}
+	.block-5__width {
+		width: 830px;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+}
+@media (max-width: 991px) {
+	.block-5__width {
+		width: 743px;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	.block-5__title {
+		width: 757px;
+	}
+}
+@media (max-width: 767px) {
+	.block-5__width {
+		width: 290px;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	.block-5__title {
+		width: 300px;
+	}
+	.block-5 {
+		margin-bottom: 30px;
+	}
 }
 /********************/
 /*ЛЕВЫЙ БЛОК - ФОРМА*/
@@ -1299,6 +1336,70 @@ textarea {
 	color:  #494135;
 	padding-left: 10px;
 	padding-top: 10px;
+}
+@media (min-width: 1200px) and (max-width: 1222px) {
+	.forma__order-box {
+		margin-left: 95px;
+	}
+}
+@media (max-width: 991px) {
+	.forma__order-box {
+		margin-left: 13px;
+		right: 0;
+	}
+	.block-5__width-2 {
+		width: 735px;
+	}
+	.block-5__text {
+		text-align: justify;
+	}
+	.private_house {
+		width: 175px;
+	}
+	.input_small {
+		width: 104px;
+	}
+	textarea {
+		width: 705px;
+	}
+}
+@media (max-width: 767px) {
+	.forma__order-box {
+		width: 280px;
+	}
+	.block-5__width-2 {
+		width: 290px;
+	}
+	.block-5__text {
+		max-width: 275px;
+	}
+	.forma__order-box {
+		padding: 5px 0;
+		margin-left: 18px;
+	}
+	.input_large {
+		width: 275px;
+	}
+	.input_small {
+		width: 109px;
+	}
+	#house {
+		margin-top: 10px;
+		width: 80px;
+	}
+	.private_house {
+		margin-left: 18px;
+    	margin-top: 50px;
+	}
+	.sbros {
+		display: block;
+	}
+	#approach {
+		margin-top: -25px;
+	}
+	textarea {
+		width: 275px;
+	}
 }
 
 /***********************/
