@@ -876,37 +876,53 @@ h1 {
 		margin-right: 104px;
 	}
 }
-
-@media (min-width: 320px) and (max-width: 769px) {
+@media (max-width: 767px) {
+	#gallery__middle {
+		width: 303px;
+		margin: auto;
+	}
+	.width_1 {
+		width: 300px;
+		margin-left: 0px;
+	}
+	.width_2 {
+		width: 285px;
+	}
+	.width_3 {
+		width: 300px;
+	}
+	.caesar_top {
+		height: 60px;
+	}
 	.ipad__link-left img {
 		margin-top: -1897px;
-    	margin-left: 36px;
+    	margin-left: 45px;
     }
 	.ipad__link-right img {
 		margin-top: -1898px;
-	    margin-left: 210px;
+	    margin-left: 228px;
 	}
 	.ipad__link-left img, .ipad__link-right img, {
 		height: 12px;
 	}
 	.gallery__middle-top {
-		width: 320px;
+		width: 303px;
 	}
 	.gallery__middle-main {
-		width: 302px;
+		width: 295px;
 		text-align: center;
 	}
 	.main__disable {
 		display: none;
 	}
 	.gallery__middle-top-text-left {
-		margin-left: -45px;
+		margin-left: -35px;
 	}
 	.gallery__middle-top-text-right {
-		right: 0;
+		margin-left: 13px;
 	}
 	.gallery__middle-top-text-text {
-		margin-left: -25px;
+		margin-left: -22px;
 	}
 	.gallery__middle-main-item {
 		width: 255px;
@@ -988,7 +1004,9 @@ h1 {
 		display: none;
 	}
 	.gallery__middle-main-drink {
-		margin-left: -15px;
+		margin-left: 4px;
+		margin-top: 20px;
+    	padding-top: 20px;
 	}
 	.gallery__drink {
 		width: 255px;
