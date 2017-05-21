@@ -1099,7 +1099,7 @@ h1 {
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	iframe {
-		width: 490px;
+		width: 465px;
 		padding-top: 10px;
 	}
 }
@@ -1107,6 +1107,12 @@ h1 {
 	iframe {
 		width: 560px;
 		height: 350px;
+	}
+	.block-4__text-width {
+		width: 758px;
+	}
+	.block-4__title {
+		width: 758px;
 	}
 	.block-4__title h2 {
 		font-size: 16px;
@@ -1124,6 +1130,15 @@ h1 {
 }
 
 @media (max-width: 767px) {
+	.block-4__text-width {
+		width: 310px;
+	}
+	.block-4__title {
+		width: 310px;
+	}
+	iframe {
+		margin-left: 8px;
+	}
 	.block-4__text {
 		line-height: 20px;
 		text-align: justify;
