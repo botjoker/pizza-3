@@ -77,7 +77,6 @@ header {
 	font-weight: 400;
 	text-align: right;
 	padding-right: 0;
-	text-align: 
 }
 .phone__number {
 	font-size: 14px;
@@ -141,7 +140,7 @@ header {
 	.menu__top-list .active a {
 		color: #a84238;
 		font-size: 16px;
-		font-weight: 800px;
+		font-weight: bolder;
 	}
 	.active {
 		margin-top: 70px;
@@ -259,7 +258,7 @@ header {
 h1 {
 	font-family: 'Merienda One', cursive;
 	font-size: 50px;
-	line-height: 52,71px;
+	line-height: 52.71px;
 }
 .row__text-text {
 	text-transform: uppercase;
@@ -508,6 +507,9 @@ button[type="button"]::-moz-focus-inner {
     -moz-box-sizing: border-box; /* Для Firefox */
     -webkit-box-sizing: border-box; /* Для Safari и Chrome */
     box-sizing: border-box;
+}
+.block-1__count::-moz-selection {
+	background: transparent; 
 }
 .block-1__count::selection { 
 	background: transparent; 
@@ -919,7 +921,7 @@ input[type="submit"]::-moz-focus-inner {
 		margin-top: -1898px;
 	    margin-left: 228px;
 	}
-	.ipad__link-left img, .ipad__link-right img, {
+	.ipad__link-left img, .ipad__link-right img {
 		height: 12px;
 	}
 	.gallery__middle-top {
@@ -1257,6 +1259,9 @@ h3 {
 	padding: 5px;
 	margin-right: 20px;
 }
+.form__line {
+	float: left;
+}
 .input_large {
 	width: 340px;
 	height: 40px;
@@ -1340,7 +1345,7 @@ input::-webkit-input-placeholder {
 	font-weight: 400;
 	line-height: 24px;
 }
-input:-moz-placeholder{
+input::-moz-placeholder {
     color:  #494135;
 	font-size: 13px;
 	font-weight: 400;
@@ -1468,6 +1473,9 @@ textarea {
 	color: #7f7b76;
 	font-weight: bolder;
 }
+.order__count::-moz-selection {
+	background: transparent; 
+}
 .order__count::selection { 
 	background: transparent; 
 }
@@ -1476,7 +1484,7 @@ textarea {
 	height: 6px;
 }
 .order__count svg polyline:hover {
-	stroke: #faf6f6;
+	background: #faf6f6;
 }
 .text-red {
 	color:  #a84238;
@@ -1583,6 +1591,11 @@ textarea {
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 26px;
+}
+@media (min-width: 1200px) and (max-width: 1222px) {
+	.form__order-box-right {
+		margin-left: 245px;
+	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 	.block-5 {
@@ -1693,7 +1706,8 @@ footer {
 }
 .footer__line {
 	border: 1px dashed #cecece;
-	margin-top: 50px;	
+	margin-top: 50px;
+	margin-right: -15px;
 }
 .inline {
 	display: inline-block;
@@ -1717,7 +1731,7 @@ footer {
 	border: 1px #cecece solid;
 }
 .footer__button:hover {
-	opacity: 1.1;
+	opacity: 0.98;
 }
 .contakty {
 	margin-top: 50px;
@@ -1783,7 +1797,7 @@ footer {
 	background-image: url(img/spritesheet.png);
 	background-repeat: no-repeat;
 	display: inline-block;
-	border: 1px solid #fffbfb;
+	border: 1px solid transparent;
 	border-radius: 3px;
     width: 27px;
     height: 27px;
@@ -1831,6 +1845,9 @@ footer {
 	.footer__button {
 	margin-left: 470px;
 	}
+	.footer__line {
+	margin-right: 0;
+	}
 	.contakty__logo {
 	display: none;
 	}
@@ -1855,6 +1872,9 @@ footer {
 	.footer__button {
 		margin-left: -59px;
 		margin-top: 0;
+	}
+	.footer__line {
+	margin-right: 0;
 	}
 	.contakty {
 		width: 755px;
