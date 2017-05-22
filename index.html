@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<form action="mailto:адрес вашей электронной почты" enctype="text/plain">
+<form action="adress@mail.ru" enctype="text/plain">
 
 <header>
 <nav class="menu__top"> <!-- MENU__TOP -->
@@ -1948,7 +1948,7 @@
 							<p class="block-1__item-radio-text">Medium, <span class="block-1__item-radio-text-text"> 1,5 l.</span></p>
 						</div><br>
 						<div class="block-1__item-radio">
-							<input name="drink-1" type="radio" data-price="1" class="radio" id="drink-1" value="drink-1" />
+							<input name="drink-1" type="radio" data-price="1" class="radio" id="drink-2" value="drink-1" />
 							<label for="drink-1" class="radio-label__bottom"></label>
 							<p class="block-1__item-radio-text block-1__item-radio-text-otstup">Large, <span class="block-1__item-radio-text-text"> 2,5 l.</span></p>
 						</div>
@@ -3430,7 +3430,7 @@
 			</div>
 			<div class="col-sm-1"></div>
 			<div class="col-lg-6 col-md-6 col-sm-11 col-xs-12 block-4__map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60809.88973386172!2d37.63742240917374!3d55.499946555405245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aae39a42e4e2f%3A0x2b5708ce1cb38587!2z0YPQuy4g0J_QvtCx0LXQtNGLLCAxNDUsINCS0LjQtNC90L7QtSwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7LiwgMTQyNzAy!5e0!3m2!1sru!2sru!4v1491470159739" width="560" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60809.88973386172!2d37.63742240917374!3d55.499946555405245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aae39a42e4e2f%3A0x2b5708ce1cb38587!2z0YPQuy4g0J_QvtCx0LXQtNGLLCAxNDUsINCS0LjQtNC90L7QtSwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7LiwgMTQyNzAy!5e0!3m2!1sru!2sru!4v1491470159739" width="560" height="350" style="border:0" allowfullscreen></iframe>
 			</div>
 		</div>
 		</div>
@@ -3466,15 +3466,15 @@
 				<div class="row block-5__width-2">
 				<div class="clearfix">
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<p class="form-text">first name <span class="star">*</span></p>
 						<label>
-							<p class="form-text">first name <span class="star">*</span></p>
-							<input type="text" name="" required="required" class="input_large">
+							<input type="text" name="first_name" required="required" class="input_large">
 						</label>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<p class="form-text">last name<span class="star">*</span></p>
 						<label>
-							<p class="form-text">last name<span class="star">*</span></p>
-							<input type="text" name="" required="required" class="input_large">
+							<input type="text" name="last_name" required="required" class="input_large">
 						</label>
 					</div>
 				</div>
@@ -3503,18 +3503,18 @@
 				<div class="row block-5__width-2">
 				<div class="clearfix">
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<p class="form-text">street<span class="star">*</span></p>
 						<label>
-							<p class="form-text">street<span class="star">*</span></p>
-							<input type="text" name="" required="required" class="input_large">
+							<input type="text" name="street" required="required" class="input_large">
 						</label>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 						<div class="row">
 						<div class="clearfix">
 							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+								<p class="form-text" id="house">№ house<span class="star">*</span></p>
 								<label>
-									<p class="form-text" id="house">№ house<span class="star">*</span></p>
-									<input type="text" name="" class="input_small">
+									<input type="text" name="house" class="input_small">
 								</label>
 							</div>
 							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 block-1__item-radio private_house">
@@ -3530,24 +3530,32 @@
 				<div class="row block-5__width-2">
 				<div class="clearfix">
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-						<label>
+						<div class="form__line">
 							<p class="form-text">№ apartament<span class="star">*</span></p>
-							<input type="text" name="" class="input_small">
-						</label>
-						<label>
+							<label>
+								<input type="text" name="apartament" class="input_small">
+							</label>
+						</div>
+						<div class="form__line">
 							<p class="form-text">№ storey<span class="star">*</span></p>
-							<input type="text" name="" class="input_small">
-						</label>
-						<span class="sbros"><br></span>
-						<label id="approach">
-							<p class="form-text">№ approach<span class="star">*</span></p>
-							<input type="text" name="" class="input_small">
-						</label>
+							<label>
+								<input type="text" name="storey" class="input_small">
+							</label>
+							<span class="sbros"><br></span>
+						</div>
+						<div class="form__line">
+							<div id="approach">
+								<p class="form-text">№ approach<span class="star">*</span></p>
+							</div>
+							<label>
+								<input type="text" name="approach" class="input_small">
+							</label>
+						</div>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-						<label>
 						<p class="form-text">date and time</p>
-							<input type="text" name="" required="required" class="input_large" placeholder="15.03.2017 / 15:00">
+						<label>
+							<input type="text" name="date_time" required="required" class="input_large" placeholder="15.03.2017 / 15:00">
 						</label>
 					</div>
 				</div>
@@ -3555,22 +3563,22 @@
 				<div class="row block-5__width-2">
 				<div class="clearfix">
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<p class="form-text">phone<span class="star">*</span></p>
 						<label>
-							<p class="form-text">phone<span class="star">*</span></p>
-							<input type="text" name="" required="required" class="input_large">
+							<input type="text" name="phone" required="required" class="input_large">
 						</label>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<p class="form-text">e-mail<span class="star">*</span></p>
 						<label>
-							<p class="form-text">e-mail<span class="star">*</span></p>
-							<input type="email" name="" required="required" class="input_large">
+							<input type="email" name="e-mail" required="required" class="input_large">
 						</label>
 					</div>
 				</div>
 				</div>
 				<div class="row block-5__width-2">
-				<label>
 					<p class="form-text" id="comment">comment to the order</p>
+				<label>
 					<textarea name="comment"></textarea>
 				</label>
 				</div>
@@ -3808,7 +3816,7 @@
 	</div>
 </footer>			
 </form>
-
+	
 <!-- bootstrap -->
 <script src="js/jquery.min_1.js"></script>
 <script src="js/bootstrap.min.js"></script>
