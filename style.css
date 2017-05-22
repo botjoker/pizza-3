@@ -1406,7 +1406,7 @@ textarea {
 	}
 	.private_house {
 		margin-left: 18px;
-    	margin-top: 50px;
+    		margin-top: 50px;
 	}
 	.sbros {
 		display: block;
@@ -1598,42 +1598,23 @@ textarea {
 	}
 }
 @media (max-width: 767px) {
-	.forma__order-box {
-		padding: 5px 0;
-	}
-	.block-5__text {
-		max-width: 275px;
-	}
-	.input_large {
-		width: 275px;
-	}
-	.input_small {
-		width: 109px;
-	}
-	#house {
-		margin-top: 10px;
-	}
-	.private_house {
-		margin-left: 125px;
-	}
-	.sbros {
-		display: block;
-	}
-	#approach {
-		margin-top: -25px;
-	}
-	textarea {
-		width: 275px;
-	}
 	.form__order-box-right {
-		margin-left: -12px;
+		margin-left: 5px;
 		padding: 0;
 		border: none;
 		width: 295px;
 	}
+	.order__width {
+		width: 315px;
+		margin-left: -14px;
+    	margin-right: 0;
+	}
+	.order__list {
+		list-style: none;
+	}
 	.order__title {
 		padding-left: 50px;
-		width: 270px;
+		width: 245px;
 		border: none;
 	}
 	.order__line {
@@ -1647,15 +1628,23 @@ textarea {
 	}
 	.form__order-box-border {
 		border: none;
+		width: 295px;
 	}
 	.form__order-box-border ol {
 		margin-left: 5px;
 	}
-	.order__count-X {
-		margin-left: -115px;
+	.order__text-text {
+		font-size: 12px;
 	}
-	.order__count {
-		margin-left: -50px;
+	.text-red {
+		margin: 0 5px;
+    }
+    .order__count {
+    	margin-left: -10px;
+    }
+	.order__count-X {
+		margin-left: 0;
+		margin-right: 0;
 	}
 	.order__total-text-text-link {
 		width: 165px;
