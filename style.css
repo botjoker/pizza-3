@@ -509,6 +509,9 @@ button[type="button"]::-moz-focus-inner {
     -webkit-box-sizing: border-box; /* Для Safari и Chrome */
     box-sizing: border-box;
 }
+.block-1__count::selection { 
+	background: transparent; 
+}
 .block-1__count-bottom {
 	margin-top: 22px;
 }
