@@ -1522,11 +1522,19 @@ textarea {
 	display: inline-block;
 }
 .order__text {
-	width: 175px;
+	width: 170px;
+	position: absolute;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .order__text-text {
 	color: #7f7b76;
 	font-weight: bolder;
+}
+.order__count {
+	margin-left: 175px;
 }
 .order__count::-moz-selection {
 	background: transparent; 
