@@ -1,18 +1,29 @@
 "use strict";
 
 $(document).ready(function(){
-	var touch = $('#touch-menu');
-	var menu = $('.menu__top-list');
-
-	$(touch).on('click', function(e) {
-		e.preventDefault();
-		menu.slideToggle();
-	});
+	//var touch = $('#touch-menu');
+	//var menu = $('.menu__top-list');
+    //
+	//$(touch).on('click', function(e) {
+	//	e.preventDefault();
+	//	menu.slideToggle();
+	//});
 	$(window).resize(function(){
 		var wid = $(window).width();
 		if(wid > 760 && menu.is(':hidden')) {
 			menu.removeAttr('style');
 		}
+	});
+
+	$('a[href^="#"]').on('click',function (e) {
+		e.preventDefault();
+		var target = this.hash;
+		var $target = $(target);
+		$('html, body').stop().animate({
+			'scrollTop': $target.offset().top-30
+		}, 900, 'swing', function () {
+			window.location.hash = target;
+		});
 	});
 
 	$('.order__count-plus').click(function(){
@@ -59,4 +70,23 @@ $(document).ready(function(){
 	$('.order__count-X').click(function(){
 		$(this).parent().remove();
 	});
+
+	$('.block-1__button').click(function(){
+		var parent = $(this).closest('.block-1__item');
+		var title = parent.find('.block-1__item-title').text();
+		var weight = parent.find('input[type=radio]:checked').attr('data-title');
+		var num = parent.find('.block-1__count-center p').text();
+		var price = parent.find('.block-1__price').text();
+		var result = '<li class="order__list-item">';
+		result += '<p class="item order__text">';
+		result += title+', <span class="order__text-text">'+weight+'</span></p>';
+		result += '<div class="item order__count"><svg class="order__count-minus"><polyline fill="none" stroke="#7f7b76" stroke-width="2" points="1,0 4,5 4,5 7,0"></polyline></svg>';
+		result += '<span class="text-red">x<i>'+num+'</i></span>';
+		result += '<svg class="order__count-plus"><polyline fill="none" stroke="#7f7b76" stroke-width="2" points="1,5 4,0 4,0 7,5"></polyline></svg>';
+		result += '<span class="point">............... </span></div>';
+		result += '<p class="item text-red">'+price+'</p>';
+		result += '<span class="order__count-X">×</span></li>';
+		$('.order__list').append(result);
+	});
+
 });
