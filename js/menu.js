@@ -25,18 +25,17 @@ $(document).ready(function(){
 			window.location.hash = target;
 		});
 	});
-
-	$('.order__count-plus').click(function(){
+	$(document).on("click", ".order__count-plus", function(event){
 		var count = $(this).siblings('.text-red').find('i');
 		count.text(parseInt(count.text())+1);
 	});
-	$('.order__count-minus').click(function(){
+	$(document).on("click", ".order__count-minus", function(event){
 		var count = $(this).siblings('.text-red').find('i');
 		if(parseInt(count.text())>1) {
 			count.text(parseInt(count.text()) - 1);
 		}
 	});
-	$('.block-1__count-right').click(function(){
+	$(document).on("click", ".block-1__count-right", function(event){
 		var count = $(this).siblings('.block-1__count-center').find('p');
 		var price = parseInt($(this).closest('.block-1__item').find('input[type=radio]:checked').attr('data-price'));
 		var result = $(this).closest('.block-1__item').find('.block-1__price');
@@ -47,7 +46,7 @@ $(document).ready(function(){
 		result.text('$' + ((parseInt(count.text()))*price) );
 
 	});
-	$('.block-1__count-left').click(function(){
+	$(document).on("click", ".block-1__count-left", function(event){
 		var count = $(this).siblings('.block-1__count-center').find('p');
 		var price = parseInt($(this).closest('.block-1__item').find('input[type=radio]:checked').attr('data-price'));
 		var result = $(this).closest('.block-1__item').find('.block-1__price');
@@ -60,18 +59,19 @@ $(document).ready(function(){
 		}
 	});
 
-	$('.block-1__item-radio input[type=radio]').change(function(){
+
+	$(document).on("change", ".block-1__item-radio input[type=radio]", function(event){
 		var count = parseInt($(this).closest('.block-1__item').find('.block-1__count-center').text());
 		var price = parseInt($(this).attr('data-price'));
 		var result = $(this).closest('.block-1__item').find('.block-1__price');
 		result.text('$' + (count*price));
 	});
 
-	$('.order__count-X').click(function(){
+	$(document).on("click", ".order__count-X", function(event){
 		$(this).parent().remove();
 	});
 
-	$('.block-1__button').click(function(){
+	$(document).on("click", ".block-1__button", function(event){
 		var parent = $(this).closest('.block-1__item');
 		var title = parent.find('.block-1__item-title').text();
 		var weight = parent.find('input[type=radio]:checked').attr('data-title');
@@ -87,6 +87,10 @@ $(document).ready(function(){
 		result += '<p class="item text-red">'+price+'</p>';
 		result += '<span class="order__count-X">×</span></li>';
 		$('.order__list').append(result);
+	});
+
+	$('.block-1__button').click(function(){
+
 	});
 
 });
