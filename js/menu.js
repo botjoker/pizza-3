@@ -29,6 +29,9 @@ $(document).ready(function(){
 		var count = $(this).siblings('.block-1__count-center').find('p');
 		var price = parseInt($(this).closest('.block-1__item').find('input[type=radio]:checked').attr('data-price'));
 		var result = $(this).closest('.block-1__item').find('.block-1__price');
+		if(isNaN(price)) {
+			price = parseInt($(this).closest('.block-1__item').attr('data-price'));
+		}
 		count.text(parseInt(count.text())+1);
 		result.text('$' + ((parseInt(count.text()))*price) );
 
@@ -38,6 +41,9 @@ $(document).ready(function(){
 		var price = parseInt($(this).closest('.block-1__item').find('input[type=radio]:checked').attr('data-price'));
 		var result = $(this).closest('.block-1__item').find('.block-1__price');
 		if(parseInt(count.text())>1) {
+			if(isNaN(price)) {
+				price = parseInt($(this).closest('.block-1__item').attr('data-price'));
+			}
 			count.text(parseInt(count.text()) - 1);
 			result.text('$' + ((parseInt(count.text()))*price) );
 		}
@@ -50,7 +56,7 @@ $(document).ready(function(){
 		result.text('$' + (count*price));
 	});
 
-	//$('.order__count-X').click(function(){
-	//
-	//});
+	$('.order__count-X').click(function(){
+		$(this).parent().remove();
+	});
 });
