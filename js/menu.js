@@ -1,13 +1,6 @@
 "use strict";
 
 $(document).ready(function(){
-	//var touch = $('#touch-menu');
-	//var menu = $('.menu__top-list');
-    //
-	//$(touch).on('click', function(e) {
-	//	e.preventDefault();
-	//	menu.slideToggle();
-	//});
 	$(window).resize(function(){
 		var wid = $(window).width();
 		if(wid > 760 && menu.is(':hidden')) {
@@ -27,12 +20,19 @@ $(document).ready(function(){
 	});
 	$(document).on("click", ".order__count-plus", function(event){
 		var count = $(this).siblings('.text-red').find('i');
+		var price = $(this).closest('.order__list-item').find('.item.text-red i');
+		var priceNumber = $(this).closest('.order__list-item').attr('data-price');
+		console.log(price.text());
 		count.text(parseInt(count.text())+1);
+		price.text(parseInt(count.text())*priceNumber);
 	});
 	$(document).on("click", ".order__count-minus", function(event){
 		var count = $(this).siblings('.text-red').find('i');
+		var price = $(this).closest('.order__list-item').find('.item.text-red i');
+		var priceNumber = $(this).closest('.order__list-item').attr('data-price');
 		if(parseInt(count.text())>1) {
 			count.text(parseInt(count.text()) - 1);
+			price.text(parseInt(count.text())*priceNumber);
 		}
 	});
 	$(document).on("click", ".block-1__count-right", function(event){
@@ -75,16 +75,17 @@ $(document).ready(function(){
 		var parent = $(this).closest('.block-1__item');
 		var title = parent.find('.block-1__item-title').text();
 		var weight = parent.find('input[type=radio]:checked').attr('data-title');
+		var priceNumber = parent.find('input[type=radio]:checked').attr('data-price');
 		var num = parent.find('.block-1__count-center p').text();
-		var price = parent.find('.block-1__price').text();
-		var result = '<li class="order__list-item">';
+		var price = parent.find('.block-1__price').text().replace('$', '');
+		var result = '<li class="order__list-item" data-price="'+priceNumber+'">';
 		result += '<p class="item order__text">';
 		result += title+', <span class="order__text-text">'+weight+'</span></p>';
 		result += '<div class="item order__count"><svg class="order__count-minus"><polyline fill="none" stroke="#7f7b76" stroke-width="2" points="1,0 4,5 4,5 7,0"></polyline></svg>';
 		result += '<span class="text-red">x<i>'+num+'</i></span>';
 		result += '<svg class="order__count-plus"><polyline fill="none" stroke="#7f7b76" stroke-width="2" points="1,5 4,0 4,0 7,5"></polyline></svg>';
 		result += '<span class="point">............... </span></div>';
-		result += '<p class="item text-red">'+price+'</p>';
+		result += '<p class="item text-red">$<i>'+price+'</i></p>';
 		result += '<span class="order__count-X">×</span></li>';
 		$('.order__list').append(result);
 	});
