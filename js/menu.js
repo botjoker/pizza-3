@@ -90,8 +90,19 @@ $(document).ready(function(){
 		$('.order__list').append(result);
 	});
 
-	$('.block-1__button').click(function(){
-
+	$(document).on("click", ".header__slider-button", function(event){
+		var result = '<li class="order__list-item" data-price="'+$(this).attr('data-price')+'">';
+		result += '<p class="item order__text">';
+		result += $(this).attr('data-name')+', <span class="order__text-text">'+$(this).attr('data-title')+'</span></p>';
+		result += '<div class="item order__count"><svg class="order__count-minus"><polyline fill="none" stroke="#7f7b76" stroke-width="2" points="1,0 4,5 4,5 7,0"></polyline></svg>';
+		result += '<span class="text-red">x<i>'+1+'</i></span>';
+		result += '<svg class="order__count-plus"><polyline fill="none" stroke="#7f7b76" stroke-width="2" points="1,5 4,0 4,0 7,5"></polyline></svg>';
+		result += '<span class="point">............... </span></div>';
+		result += '<p class="item text-red">$<i>'+$(this).attr('data-price')+'</i></p>';
+		result += '<span class="order__count-X">×</span></li>';
+		$('.order__list').append(result);
 	});
+
+
 
 });
