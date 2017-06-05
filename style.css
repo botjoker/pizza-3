@@ -43,6 +43,7 @@ footer_bottom...........3789..................1974
 * {
 	padding: 0;
 	margin: 0;
+	outline: none;
 }
 body {
 	max-width: 1920px;
