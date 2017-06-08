@@ -61,10 +61,8 @@
                                     <h1>Pizza pepperoni</h1>
 
                                     <p class="row__text-text">Pizza of the day!</p>
-
                                     <p class="row__text-text-text">Brand sauce, marinated onion, ham, sausage cake,
                                         fresh Bulgarian pepper, champignons, mozzarella cheese, olives.</p>
-                                    <!-- <button type="button" class="btn btn-danger">add to cart</button> -->
                                     <p class="btn btn-danger header__slider-button" data-price="10" data-title="550 gr"
                                        data-name="Pepperoni">add to cart</p>
                                 </div>
@@ -81,10 +79,8 @@
                                     <h1>Pizza pepperoni</h1>
 
                                     <p class="row__text-text">Pizza of the day!</p>
-
                                     <p class="row__text-text-text">Brand sauce, marinated onion, ham, sausage cake,
                                         fresh Bulgarian pepper, champignons, mozzarella cheese, olives.</p>
-
                                     <p class="btn btn-danger header__slider-button" data-price="10" data-title="550 gr"
                                        data-name="Pepperoni">add to cart</p>
                                 </div>
@@ -107,7 +103,6 @@
         <div class="row block-1__title" id="block-1">
             <div class="col-lg-12 col-md-12">
                 <img src="img/arrow_down.jpg" alt="фото">
-
                 <h2>choose a pizza</h2>
             </div>
         </div>
@@ -116,9 +111,10 @@
         <div class="gallery" id="pizza__block">
             <div class="gallery__slide gallery__slide_active" >
                 <div class="gallery__image" id="items-slider1">
-                    <div class="block-1__slide">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                    <div class="block-1__slide"> <!-- 1-page slider -->
+                        <div class="row"> <!-- row 1-slider --> 
+       <!--  1  -->         <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="block-1__item">
                                     <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
 
@@ -134,27 +130,25 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-1" type="radio" data-price="10"
-                                                                   data-title="550 gr" class="radio" id="pizza-1"
-                                                                   value="pizza-1" checked="checked"/>
-                                                            <label for="pizza-1" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-1" name="pizza-1" value="pizza-1" type="radio" data-price="10" data-title="550 gr" data-name="Pepperoni" class="__radio" checked />
+                                                                    <label for="pizza-1" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-1" type="radio" data-price="15"
-                                                                   data-title="1100 gr" class="radio" id="pizza-2"
-                                                                   value="pizza-1"/>
-                                                            <label for="pizza-2" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-2" name="pizza-1" value="pizza-1" type="radio" data-price="15" data-title="1100 gr" data-name="Pepperoni" class="__radio" />
+                                                                    <label  for="pizza-2" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-5 col-sm-5">
@@ -183,7 +177,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+       <!--  2  -->         <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="block-1__item">
                                     <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
 
@@ -199,31 +193,29 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-3" type="radio" data-price="30"
-                                                                   data-title="550 gr" class="radio" id="pizza-3"
-                                                                   value="pizza-3"/>
-                                                            <label for="pizza-3" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-3" name="pizza-3" value="pizza-3" type="radio" data-price="30" data-title="550 gr" data-name="Mexican" class="__radio" checked />
+                                                                    <label for="pizza-3" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-3" type="radio" data-price="35"
-                                                                   data-title="1100 gr" class="radio" id="pizza-4"
-                                                                   value="pizza-3" checked="checked"/>
-                                                            <label for="pizza-4" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-4" name="pizza-3" value="pizza-3" type="radio" data-price="35" data-title="1100 gr" data-name="Mexican" class="__radio" />
+                                                                    <label  for="pizza-4" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-5 col-sm-5">
-                                                        <div class="block-1__count block-1__count-bottom">
+                                                        <div class="block-1__count">
                                                             <div class="block-1__count-line block-1__count-left"></div>
                                                             <div class="block-1__count-line block-1__count-center">
                                                                 <p>1</p>
@@ -248,7 +240,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+       <!--  3  -->         <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="block-1__item">
                                     <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
 
@@ -264,27 +256,25 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-5" type="radio" data-price="9"
-                                                                   data-title="550 gr" class="radio" id="pizza-5"
-                                                                   value="pizza-5" checked="checked"/>
-                                                            <label for="pizza-5" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-5" name="pizza-5" value="pizza-5" type="radio" data-price="9" data-title="550 gr" data-name="Mediterranean" class="__radio" checked />
+                                                                    <label for="pizza-5" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-5" type="radio" data-price="14"
-                                                                   data-title="1100 gr" class="radio" id="pizza-6"
-                                                                   value="pizza-5"/>
-                                                            <label for="pizza-6" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-6" name="pizza-5" value="pizza-5" type="radio" data-price="14" data-title="1100 gr" data-name="Mediterranean" class="__radio" />
+                                                                    <label  for="pizza-6" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-5 col-sm-5">
@@ -313,7 +303,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+       <!--  4  -->         <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="block-1__item">
                                     <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
 
@@ -329,27 +319,25 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-7" type="radio" data-price="11"
-                                                                   data-title="550 gr" class="radio" id="pizza-7"
-                                                                   value="pizza-7" checked="checked"/>
-                                                            <label for="pizza-7" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-7" name="pizza-7" value="pizza-7" type="radio" data-price="11" data-title="550 gr" data-name="Wild mushroom wagyu" class="__radio" checked />
+                                                                    <label for="pizza-7" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-7" type="radio" data-price="16"
-                                                                   data-title="1100 gr" class="radio" id="pizza-8"
-                                                                   value="pizza-7"/>
-                                                            <label for="pizza-8" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-8" name="pizza-7" value="pizza-7" type="radio" data-price="16" data-title="1100 gr" data-name="Wild mushroom wagyu" class="__radio" />
+                                                                    <label  for="pizza-8" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-5 col-sm-5">
@@ -378,7 +366,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+       <!--  5  -->         <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="block-1__item">
                                     <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
 
@@ -394,27 +382,25 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-9" type="radio" data-price="10"
-                                                                   data-title="550 gr" class="radio" id="pizza-9"
-                                                                   value="pizza-9" checked="checked"/>
-                                                            <label for="pizza-9" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-9" name="pizza-9" value="pizza-9" type="radio" data-price="10" data-title="550 gr" data-name="Pepperoni" class="__radio" checked />
+                                                                    <label for="pizza-9" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-9" type="radio" data-price="15"
-                                                                   data-title="1100 gr" class="radio" id="pizza-10"
-                                                                   value="pizza-9"/>
-                                                            <label for="pizza-10" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-10" name="pizza-9" value="pizza-9" type="radio" data-price="15" data-title="1100 gr" data-name="Pepperoni" class="__radio" />
+                                                                    <label  for="pizza-10" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-5 col-sm-5">
@@ -443,7 +429,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+       <!--  6  -->         <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="block-1__item">
                                     <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
 
@@ -459,31 +445,29 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-11" type="radio" data-price="30"
-                                                                   data-title="550 gr" class="radio" id="pizza-11"
-                                                                   value="pizza-11"/>
-                                                            <label for="pizza-11" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-11" name="pizza-11" value="pizza-11" type="radio" data-price="30" data-title="550 gr" data-name="Mexican" class="__radio" checked />
+                                                                    <label for="pizza-11" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-11" type="radio" class="radio"
-                                                                   data-price="35" data-title="1100 gr" id="pizza-12"
-                                                                   value="pizza-11" checked="checked"/>
-                                                            <label for="pizza-12" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-12" name="pizza-11" value="pizza-11" type="radio" data-price="35" data-title="1100 gr" data-name="Mexican" class="__radio" />
+                                                                    <label  for="pizza-12" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-5 col-sm-5">
-                                                        <div class="block-1__count block-1__count-bottom">
+                                                        <div class="block-1__count">
                                                             <div class="block-1__count-line block-1__count-left"></div>
                                                             <div class="block-1__count-line block-1__count-center">
                                                                 <p>2</p>
@@ -508,7 +492,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+       <!--  7  -->         <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="block-1__item">
                                     <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
 
@@ -524,27 +508,25 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-13" type="radio" data-price="9"
-                                                                   data-title="550 gr" class="radio" id="pizza-13"
-                                                                   value="pizza-13" checked="checked"/>
-                                                            <label for="pizza-13" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-13" name="pizza-13" value="pizza-13" type="radio" data-price="9" data-title="550 gr" data-name="Mediterranean" class="__radio" checked />
+                                                                    <label for="pizza-13" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-13" type="radio" data-price="14"
-                                                                   data-title="1100 gr" class="radio" id="pizza-14"
-                                                                   value="pizza-13"/>
-                                                            <label for="pizza-14" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-14" name="pizza-13" value="pizza-13" type="radio" data-price="14" data-title="1100 gr" data-name="Mediterranean" class="__radio" />
+                                                                    <label  for="pizza-14" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-5 col-sm-5">
@@ -573,7 +555,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+       <!--  8  -->         <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="block-1__item">
                                     <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
 
@@ -589,27 +571,25 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-15" type="radio" data-price="11"
-                                                                   data-title="550 gr" class="radio" id="pizza-15"
-                                                                   value="pizza-15" checked="checked"/>
-                                                            <label for="pizza-15" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-15" name="pizza-15" value="pizza-15" type="radio" data-price="11" data-title="550 gr" data-name="Wild mushroom wagyu" class="__radio" checked />
+                                                                    <label for="pizza-15" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-15" type="radio" data-price="16"
-                                                                   data-title="1100 gr" class="radio" id="pizza-16"
-                                                                   value="pizza-15"/>
-                                                            <label for="pizza-16" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-16" name="pizza-15" value="pizza-15" type="radio" data-price="16" data-title="1100 gr" data-name="Wild mushroom wagyu" class="__radio" />
+                                                                    <label  for="pizza-16" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-5 col-sm-5">
@@ -637,12 +617,21 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> <!-- /.row 1-slider -->
 
-                    </div>
-                    <div class="block-1__slide">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="clearfix"></div>
+                        <div class="row number_page-top">
+                            <div class="col-lg-12 number_page">
+                                <span class="number_page-text">1</span> of 3
+                            </div>
+                        </div>
+                    </div>  <!-- /.1-page slider -->
+
+
+                    <div class="block-1__slide"> <!-- 2-page slider -->
+                        <div class="row"> <!-- row 2-slider -->
+
+       <!--  1  -->         <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="block-1__item">
                                     <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
 
@@ -658,27 +647,25 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-1" type="radio" data-price="10"
-                                                                   data-title="550 gr" class="radio" id="pizza-1"
-                                                                   value="pizza-1" checked="checked"/>
-                                                            <label for="pizza-1" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-17" name="pizza-17" value="pizza-17" type="radio" data-price="10" data-title="550 gr" data-name="Pepperoni" class="__radio" checked />
+                                                                    <label for="pizza-17" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-1" type="radio" data-price="15"
-                                                                   data-title="1100 gr" class="radio" id="pizza-2"
-                                                                   value="pizza-1"/>
-                                                            <label for="pizza-2" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-18" name="pizza-17" value="pizza-17" type="radio" data-price="15" data-title="1100 gr" data-name="Pepperoni" class="__radio" />
+                                                                    <label  for="pizza-18" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-5 col-sm-5">
@@ -707,7 +694,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+       <!--  2  -->         <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="block-1__item">
                                     <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
 
@@ -723,31 +710,29 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-3" type="radio" data-price="30"
-                                                                   data-title="550 gr" class="radio" id="pizza-3"
-                                                                   value="pizza-3"/>
-                                                            <label for="pizza-3" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-19" name="pizza-19" value="pizza-19" type="radio" data-price="30" data-title="550 gr" data-name="Mexican" class="__radio" checked />
+                                                                    <label for="pizza-19" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-3" type="radio" data-price="35"
-                                                                   data-title="1100 gr" class="radio" id="pizza-4"
-                                                                   value="pizza-3" checked="checked"/>
-                                                            <label for="pizza-4" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-20" name="pizza-19" value="pizza-19" type="radio" data-price="35" data-title="1100 gr" data-name="Mexican" class="__radio" />
+                                                                    <label  for="pizza-20" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-5 col-sm-5">
-                                                        <div class="block-1__count block-1__count-bottom">
+                                                        <div class="block-1__count">
                                                             <div class="block-1__count-line block-1__count-left"></div>
                                                             <div class="block-1__count-line block-1__count-center">
                                                                 <p>1</p>
@@ -772,7 +757,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+       <!--  3  -->         <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="block-1__item">
                                     <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
 
@@ -788,27 +773,25 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-5" type="radio" data-price="9"
-                                                                   data-title="550 gr" class="radio" id="pizza-5"
-                                                                   value="pizza-5" checked="checked"/>
-                                                            <label for="pizza-5" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-21" name="pizza-21" value="pizza-21" type="radio" data-price="9" data-title="550 gr" data-name="Mediterranean" class="__radio" checked />
+                                                                    <label for="pizza-21" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-5" type="radio" data-price="14"
-                                                                   data-title="1100 gr" class="radio" id="pizza-6"
-                                                                   value="pizza-5"/>
-                                                            <label for="pizza-6" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-22" name="pizza-21" value="pizza-21" type="radio" data-price="14" data-title="1100 gr" data-name="Mediterranean" class="__radio" />
+                                                                    <label  for="pizza-22" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-5 col-sm-5">
@@ -837,7 +820,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+       <!--  4  -->         <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="block-1__item">
                                     <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
 
@@ -853,27 +836,25 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-7" type="radio" data-price="11"
-                                                                   data-title="550 gr" class="radio" id="pizza-7"
-                                                                   value="pizza-7" checked="checked"/>
-                                                            <label for="pizza-7" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-23" name="pizza-23" value="pizza-23" type="radio" data-price="11" data-title="550 gr" data-name="Wild mushroom wagyu" class="__radio" checked />
+                                                                    <label for="pizza-23" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-7" type="radio" data-price="16"
-                                                                   data-title="1100 gr" class="radio" id="pizza-8"
-                                                                   value="pizza-7"/>
-                                                            <label for="pizza-8" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-24" name="pizza-23" value="pizza-23" type="radio" data-price="16" data-title="1100 gr" data-name="Wild mushroom wagyu" class="__radio" />
+                                                                    <label  for="pizza-24" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-5 col-sm-5">
@@ -902,7 +883,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+       <!--  5  -->         <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="block-1__item">
                                     <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
 
@@ -918,27 +899,25 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-9" type="radio" data-price="10"
-                                                                   data-title="550 gr" class="radio" id="pizza-9"
-                                                                   value="pizza-9" checked="checked"/>
-                                                            <label for="pizza-9" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-25" name="pizza-25" value="pizza-25" type="radio" data-price="10" data-title="550 gr" data-name="Pepperoni" class="__radio" checked />
+                                                                    <label for="pizza-25" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-9" type="radio" data-price="15"
-                                                                   data-title="1100 gr" class="radio" id="pizza-10"
-                                                                   value="pizza-9"/>
-                                                            <label for="pizza-10" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-26" name="pizza-25" value="pizza-25" type="radio" data-price="15" data-title="1100 gr" data-name="Pepperoni" class="__radio" />
+                                                                    <label  for="pizza-26" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-5 col-sm-5">
@@ -967,7 +946,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+       <!--  6  -->         <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="block-1__item">
                                     <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
 
@@ -983,31 +962,29 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-11" type="radio" data-price="30"
-                                                                   data-title="550 gr" class="radio" id="pizza-11"
-                                                                   value="pizza-11"/>
-                                                            <label for="pizza-11" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-27" name="pizza-27" value="pizza-27" type="radio" data-price="30" data-title="550 gr" data-name="Mexican" class="__radio" checked />
+                                                                    <label for="pizza-27" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-11" type="radio" class="radio"
-                                                                   data-price="35" data-title="1100 gr" id="pizza-12"
-                                                                   value="pizza-11" checked="checked"/>
-                                                            <label for="pizza-12" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-28" name="pizza-27" value="pizza-27" type="radio" data-price="35" data-title="1100 gr" data-name="Mexican" class="__radio" />
+                                                                    <label  for="pizza-28" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-5 col-sm-5">
-                                                        <div class="block-1__count block-1__count-bottom">
+                                                        <div class="block-1__count">
                                                             <div class="block-1__count-line block-1__count-left"></div>
                                                             <div class="block-1__count-line block-1__count-center">
                                                                 <p>2</p>
@@ -1032,7 +1009,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+       <!--  7  -->         <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="block-1__item">
                                     <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
 
@@ -1048,27 +1025,25 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-13" type="radio" data-price="9"
-                                                                   data-title="550 gr" class="radio" id="pizza-13"
-                                                                   value="pizza-13" checked="checked"/>
-                                                            <label for="pizza-13" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-29" name="pizza-29" value="pizza-29" type="radio" data-price="9" data-title="550 gr" data-name="Mediterranean" class="__radio" checked />
+                                                                    <label for="pizza-29" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-13" type="radio" data-price="14"
-                                                                   data-title="1100 gr" class="radio" id="pizza-14"
-                                                                   value="pizza-13"/>
-                                                            <label for="pizza-14" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-30" name="pizza-29" value="pizza-29" type="radio" data-price="14" data-title="1100 gr" data-name="Mediterranean" class="__radio" />
+                                                                    <label  for="pizza-30" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-5 col-sm-5">
@@ -1097,7 +1072,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+       <!--  8  -->         <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="block-1__item">
                                     <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
 
@@ -1113,27 +1088,25 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-15" type="radio" data-price="11"
-                                                                   data-title="550 gr" class="radio" id="pizza-15"
-                                                                   value="pizza-15" checked="checked"/>
-                                                            <label for="pizza-15" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-31" name="pizza-31" value="pizza-31" type="radio" data-price="11" data-title="550 gr" data-name="Wild mushroom wagyu" class="__radio" checked />
+                                                                    <label for="pizza-31" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-15" type="radio" data-price="16"
-                                                                   data-title="1100 gr" class="radio" id="pizza-16"
-                                                                   value="pizza-15"/>
-                                                            <label for="pizza-16" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-32" name="pizza-31" value="pizza-31" type="radio" data-price="16" data-title="1100 gr" data-name="Wild mushroom wagyu" class="__radio" />
+                                                                    <label  for="pizza-32" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-5 col-sm-5">
@@ -1161,29 +1134,26 @@
                                     </div>
                                 </div>
                             </div>
+                        </div> <!-- /.row 2-slider -->
+                        <div class="clearfix"></div>
+                        <div class="row number_page-top">
+                            <div class="col-lg-12 number_page">
+                                <span class="number_page-text">2</span> of 3
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="row number_page-top">
-                    <div class="col-lg-12 number_page">
-                        <span class="number_page-text">1</span> of 3
-                    </div>
-                </div>
-            </div>
+                    </div> <!-- /.2-page slider -->
 
-            <div class="gallery__slide gallery__image-2">
-                <div class="gallery__image">
-                    <div class="block-1__slide">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="block-1__slide"> <!-- 3-page slider -->
+                        <div class="row"> <!-- row 3-slider --> 
+
+       <!--  1  -->         <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="block-1__item">
                                     <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
 
                                     <div class="row">
                                         <div class="clearfix">
                                             <div class="col-lg-12">
-                                                <p class="block-1__item-title">mediterranean</p>
+                                                <p class="block-1__item-title">pepperoni</p>
 
                                                 <p class="block-1__item-text"><span class="block-1__item-text-text">Ingredients: </span>
                                                     Brand sauce, pickled onion, ham, sausage, fresh Bulgarian pepper,
@@ -1192,27 +1162,25 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-17" type="radio" data-price="10"
-                                                                   data-title="550 gr" class="radio" id="pizza-17"
-                                                                   value="pizza-17" checked="checked"/>
-                                                            <label for="pizza-17" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-33" name="pizza-33" value="pizza-33" type="radio" data-price="10" data-title="550 gr" data-name="Pepperoni" class="__radio" checked />
+                                                                    <label for="pizza-33" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-17" type="radio" data-price="15"
-                                                                   data-title="1100 gr" class="radio" id="pizza-18"
-                                                                   value="pizza-17"/>
-                                                            <label for="pizza-18" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-34" name="pizza-33" value="pizza-33" type="radio" data-price="15" data-title="1100 gr" data-name="Pepperoni" class="__radio" />
+                                                                    <label  for="pizza-34" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-5 col-sm-5">
@@ -1241,7 +1209,70 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+       <!--  2  -->         <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="block-1__item">
+                                    <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
+
+                                    <div class="row">
+                                        <div class="clearfix">
+                                            <div class="col-lg-12">
+                                                <p class="block-1__item-title">mexican</p>
+
+                                                <p class="block-1__item-text"><span class="block-1__item-text-text">Ingredients: </span>
+                                                    Brand sauce, pickled onion, ham, sausage, fresh Bulgarian pepper,
+                                                    champignons, mozzarella cheese, olives.</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="clearfix">
+                                                    <div class="col-lg-7 col-md-7 col-sm-7">
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-35" name="pizza-35" value="pizza-35" type="radio" data-price="30" data-title="550 gr" data-name="Mexican" class="__radio" checked />
+                                                                    <label for="pizza-35" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-36" name="pizza-35" value="pizza-35" type="radio" data-price="35" data-title="1100 gr" data-name="Mexican" class="__radio" />
+                                                                    <label  for="pizza-36" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 col-sm-5">
+                                                        <div class="block-1__count">
+                                                            <div class="block-1__count-line block-1__count-left"></div>
+                                                            <div class="block-1__count-line block-1__count-center">
+                                                                <p>1</p>
+                                                            </div>
+                                                            <div class="block-1__count-line block-1__count-right"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="clearfix">
+                                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                                        <p class="block-1__price">$30</p>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                                        <p class="btn btn-default block-1__button">Add to cart</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+       <!--  3  -->         <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="block-1__item">
                                     <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
 
@@ -1257,27 +1288,25 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-19" type="radio" data-price="9"
-                                                                   data-title="550 gr" class="radio" id="pizza-19"
-                                                                   value="pizza-19" checked="checked"/>
-                                                            <label for="pizza-19" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-37" name="pizza-37" value="pizza-37" type="radio" data-price="9" data-title="550 gr" data-name="Mediterranean" class="__radio" checked />
+                                                                    <label for="pizza-37" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-19" type="radio" data-price="14"
-                                                                   data-title="1100 gr" class="radio" id="pizza-20"
-                                                                   value="pizza-19"/>
-                                                            <label for="pizza-20" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-38" name="pizza-37" value="pizza-37" type="radio" data-price="14" data-title="1100 gr" data-name="Mediterranean" class="__radio" />
+                                                                    <label  for="pizza-38" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-5 col-sm-5">
@@ -1306,7 +1335,196 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+       <!--  4  -->         <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="block-1__item">
+                                    <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
+
+                                    <div class="row">
+                                        <div class="clearfix">
+                                            <div class="col-lg-12">
+                                                <p class="block-1__item-title">wild mushroom wagyu</p>
+
+                                                <p class="block-1__item-text"><span class="block-1__item-text-text">Ingredients: </span>
+                                                    Brand sauce, pickled onion, ham, sausage, fresh Bulgarian pepper,
+                                                    champignons, mozzarella cheese, olives.</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="clearfix">
+                                                    <div class="col-lg-7 col-md-7 col-sm-7">
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-39" name="pizza-39" value="pizza-39" type="radio" data-price="11" data-title="550 gr" data-name="Wild mushroom wagyu" class="__radio" checked />
+                                                                    <label for="pizza-39" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-40" name="pizza-39" value="pizza-39" type="radio" data-price="16" data-title="1100 gr" data-name="Wild mushroom wagyu" class="__radio" />
+                                                                    <label  for="pizza-40" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 col-sm-5">
+                                                        <div class="block-1__count">
+                                                            <div class="block-1__count-line block-1__count-left"></div>
+                                                            <div class="block-1__count-line block-1__count-center">
+                                                                <p>1</p>
+                                                            </div>
+                                                            <div class="block-1__count-line block-1__count-right"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="clearfix">
+                                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                                        <p class="block-1__price">$11</p>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                                        <p class="btn btn-default block-1__button">Add to cart</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+       <!--  5  -->         <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="block-1__item">
+                                    <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
+
+                                    <div class="row">
+                                        <div class="clearfix">
+                                            <div class="col-lg-12">
+                                                <p class="block-1__item-title">pepperoni</p>
+
+                                                <p class="block-1__item-text"><span class="block-1__item-text-text">Ingredients: </span>
+                                                    Brand sauce, pickled onion, ham, sausage, fresh Bulgarian pepper,
+                                                    champignons, mozzarella cheese, olives.</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="clearfix">
+                                                    <div class="col-lg-7 col-md-7 col-sm-7">
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-41" name="pizza-41" value="pizza-41" type="radio" data-price="10" data-title="550 gr" data-name="Pepperoni" class="__radio" checked />
+                                                                    <label for="pizza-41" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-42" name="pizza-41" value="pizza-41" type="radio" data-price="15" data-title="1100 gr" data-name="Pepperoni" class="__radio" />
+                                                                    <label  for="pizza-42" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 col-sm-5">
+                                                        <div class="block-1__count">
+                                                            <div class="block-1__count-line block-1__count-left"></div>
+                                                            <div class="block-1__count-line block-1__count-center">
+                                                                <p>1</p>
+                                                            </div>
+                                                            <div class="block-1__count-line block-1__count-right"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="clearfix">
+                                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                                        <p class="block-1__price">$10</p>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                                        <p class="btn btn-default block-1__button">Add to cart</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+       <!--  6  -->         <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="block-1__item">
+                                    <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
+
+                                    <div class="row">
+                                        <div class="clearfix">
+                                            <div class="col-lg-12">
+                                                <p class="block-1__item-title">mexican</p>
+
+                                                <p class="block-1__item-text"><span class="block-1__item-text-text">Ingredients: </span>
+                                                    Brand sauce, pickled onion, ham, sausage, fresh Bulgarian pepper,
+                                                    champignons, mozzarella cheese, olives.</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="clearfix">
+                                                    <div class="col-lg-7 col-md-7 col-sm-7">
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-43" name="pizza-43" value="pizza-43" type="radio" data-price="30" data-title="550 gr" data-name="Mexican" class="__radio" checked />
+                                                                    <label for="pizza-43" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-44" name="pizza-43" value="pizza-43" type="radio" data-price="35" data-title="1100 gr" data-name="Mexican" class="__radio" />
+                                                                    <label  for="pizza-44" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 col-sm-5">
+                                                        <div class="block-1__count">
+                                                            <div class="block-1__count-line block-1__count-left"></div>
+                                                            <div class="block-1__count-line block-1__count-center">
+                                                                <p>2</p>
+                                                            </div>
+                                                            <div class="block-1__count-line block-1__count-right"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="clearfix">
+                                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                                        <p class="block-1__price">$30</p>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                                        <p class="btn btn-default block-1__button">Add to cart</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+       <!--  7  -->         <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="block-1__item">
                                     <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
 
@@ -1322,27 +1540,25 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-21" type="radio" data-price="9"
-                                                                   data-title="550 gr" class="radio" id="pizza-21"
-                                                                   value="pizza-21" checked="checked"/>
-                                                            <label for="pizza-21" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-45" name="pizza-45" value="pizza-45" type="radio" data-price="9" data-title="550 gr" data-name="Mediterranean" class="__radio" checked />
+                                                                    <label for="pizza-45" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-21" type="radio" data-price="14"
-                                                                   data-title="1100 gr" class="radio" id="pizza-22"
-                                                                   value="pizza-21"/>
-                                                            <label for="pizza-22" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-46" name="pizza-45" value="pizza-45" type="radio" data-price="14" data-title="1100 gr" data-name="Mediterranean" class="__radio" />
+                                                                    <label  for="pizza-46" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-5 col-sm-5">
@@ -1371,14 +1587,14 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+       <!--  8  -->         <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="block-1__item">
                                     <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
 
                                     <div class="row">
                                         <div class="clearfix">
                                             <div class="col-lg-12">
-                                                <p class="block-1__item-title">mediterranean</p>
+                                                <p class="block-1__item-title">wild mushroom wagyu</p>
 
                                                 <p class="block-1__item-text"><span class="block-1__item-text-text">Ingredients: </span>
                                                     Brand sauce, pickled onion, ham, sausage, fresh Bulgarian pepper,
@@ -1387,27 +1603,25 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-23" type="radio" data-price="9"
-                                                                   data-title="550 gr" class="radio" id="pizza-23"
-                                                                   value="pizza-23" checked="checked"/>
-                                                            <label for="pizza-23" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="__radio-item">
+                                                                    <input id="pizza-47" name="pizza-47" value="pizza-47" type="radio" data-price="11" data-title="550 gr" data-name="Wild mushroom wagyu" class="__radio" checked />
+                                                                    <label for="pizza-47" class="__radio-label">
+                                                                        <p class="__radio-text">Medium,<span class="__radio-text-text"> 550 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-23" type="radio" data-price="9"
-                                                                   data-title="1100 gr" class="radio" id="pizza-24"
-                                                                   value="pizza-23"/>
-                                                            <label for="pizza-24" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
+                                                        <div class="row clearfix __radio-row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="_radio-item">
+                                                                    <input id="pizza-48" name="pizza-47" value="pizza-47" type="radio" data-price="16" data-title="1100 gr" data-name="Wild mushroom wagyu" class="__radio" />
+                                                                    <label  for="pizza-48" class="__radio-label">
+                                                                        <p class="__radio-text __radio-text-bottom">Large,<span class="__radio-text-text"> 1100 gr.</span></p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-5 col-sm-5">
@@ -1424,7 +1638,7 @@
                                             <div class="row">
                                                 <div class="clearfix">
                                                     <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="block-1__price">$9</p>
+                                                        <p class="block-1__price">$11</p>
                                                     </div>
                                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                                         <p class="btn btn-default block-1__button">Add to cart</p>
@@ -1435,833 +1649,30 @@
                                     </div>
                                 </div>
                             </div>
+                        </div><!-- /.row 3-slider -->
 
-                            <div class="col-lg-3 col-md-4 col-sm-6">
-                                <div class="block-1__item">
-                                    <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
-
-                                    <div class="row">
-                                        <div class="clearfix">
-                                            <div class="col-lg-12">
-                                                <p class="block-1__item-title">mediterranean</p>
-
-                                                <p class="block-1__item-text"><span class="block-1__item-text-text">Ingredients: </span>
-                                                    Brand sauce, pickled onion, ham, sausage, fresh Bulgarian pepper,
-                                                    champignons, mozzarella cheese, olives.</p>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-25" type="radio" data-price="9"
-                                                                   data-title="550 gr" class="radio" id="pizza-25"
-                                                                   value="pizza-25" checked="checked"/>
-                                                            <label for="pizza-25" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-25" type="radio" data-price="9"
-                                                                   data-title="1100 gr" class="radio" id="pizza-26"
-                                                                   value="pizza-25"/>
-                                                            <label for="pizza-26" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-5 col-md-5 col-sm-5">
-                                                        <div class="block-1__count">
-                                                            <div class="block-1__count-line block-1__count-left"></div>
-                                                            <div class="block-1__count-line block-1__count-center">
-                                                                <p>1</p>
-                                                            </div>
-                                                            <div class="block-1__count-line block-1__count-right"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="block-1__price">$9</p>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="btn btn-default block-1__button">Add to cart</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-4 col-sm-6">
-                                <div class="block-1__item">
-                                    <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
-
-                                    <div class="row">
-                                        <div class="clearfix">
-                                            <div class="col-lg-12">
-                                                <p class="block-1__item-title">mediterranean</p>
-
-                                                <p class="block-1__item-text"><span class="block-1__item-text-text">Ingredients: </span>
-                                                    Brand sauce, pickled onion, ham, sausage, fresh Bulgarian pepper,
-                                                    champignons, mozzarella cheese, olives.</p>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-27" type="radio" data-price="9"
-                                                                   data-title="550 gr" class="radio" id="pizza-27"
-                                                                   value="pizza-27" checked="checked"/>
-                                                            <label for="pizza-27" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-27" type="radio" data-price="9"
-                                                                   data-title="1100 gr" class="radio" id="pizza-28"
-                                                                   value="pizza-27"/>
-                                                            <label for="pizza-28" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-5 col-md-5 col-sm-5">
-                                                        <div class="block-1__count">
-                                                            <div class="block-1__count-line block-1__count-left"></div>
-                                                            <div class="block-1__count-line block-1__count-center">
-                                                                <p>1</p>
-                                                            </div>
-                                                            <div class="block-1__count-line block-1__count-right"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="block-1__price">$9</p>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="btn btn-default block-1__button">Add to cart</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-4 col-sm-6">
-                                <div class="block-1__item">
-                                    <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
-
-                                    <div class="row">
-                                        <div class="clearfix">
-                                            <div class="col-lg-12">
-                                                <p class="block-1__item-title">mediterranean</p>
-
-                                                <p class="block-1__item-text"><span class="block-1__item-text-text">Ingredients: </span>
-                                                    Brand sauce, pickled onion, ham, sausage, fresh Bulgarian pepper,
-                                                    champignons, mozzarella cheese, olives.</p>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-29" type="radio" data-price="9"
-                                                                   data-title="550 gr" class="radio" id="pizza-29"
-                                                                   value="pizza-29" checked="checked"/>
-                                                            <label for="pizza-29" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-29" type="radio" data-price="9"
-                                                                   data-title="1100 gr" class="radio" id="pizza-30"
-                                                                   value="pizza-29"/>
-                                                            <label for="pizza-30" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-5 col-md-5 col-sm-5">
-                                                        <div class="block-1__count">
-                                                            <div class="block-1__count-line block-1__count-left"></div>
-                                                            <div class="block-1__count-line block-1__count-center">
-                                                                <p>1</p>
-                                                            </div>
-                                                            <div class="block-1__count-line block-1__count-right"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="block-1__price">$9</p>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="btn btn-default block-1__button">Add to cart</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-4 col-sm-6">
-                                <div class="block-1__item">
-                                    <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
-
-                                    <div class="row">
-                                        <div class="clearfix">
-                                            <div class="col-lg-12">
-                                                <p class="block-1__item-title">mediterranean</p>
-
-                                                <p class="block-1__item-text"><span class="block-1__item-text-text">Ingredients: </span>
-                                                    Brand sauce, pickled onion, ham, sausage, fresh Bulgarian pepper,
-                                                    champignons, mozzarella cheese, olives.</p>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-31" type="radio" data-price="9"
-                                                                   data-title="550 gr" class="radio" id="pizza-31"
-                                                                   value="pizza-31" checked="checked"/>
-                                                            <label for="pizza-31" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-31" type="radio" data-price="9"
-                                                                   data-title="1100 gr" class="radio" id="pizza-32"
-                                                                   value="pizza-31"/>
-                                                            <label for="pizza-32" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-5 col-md-5 col-sm-5">
-                                                        <div class="block-1__count">
-                                                            <div class="block-1__count-line block-1__count-left"></div>
-                                                            <div class="block-1__count-line block-1__count-center">
-                                                                <p>1</p>
-                                                            </div>
-                                                            <div class="block-1__count-line block-1__count-right"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="block-1__price">$9</p>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="btn btn-default block-1__button">Add to cart</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="clearfix"></div>
-                            <div class="row number_page-top">
-                                <div class="col-lg-12 number_page">
-                                    <span class="number_page-text">2</span> of 3
-                                </div>
+                        <div class="clearfix"></div>
+                        <div class="row number_page-top">
+                            <div class="col-lg-12 number_page">
+                                <span class="number_page-text">3</span> of 3
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </div> <!-- /.3-page slider -->
 
-            <div class="gallery__slide gallery__image-3">
-                <div class="gallery__image">
-                    <div class="block-1__slide">
-                        <div class="row">
-
-                            <div class="col-lg-3 col-md-4 col-sm-6">
-                                <div class="block-1__item">
-                                    <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
-
-                                    <div class="row">
-                                        <div class="clearfix">
-                                            <div class="col-lg-12">
-                                                <p class="block-1__item-title">mediterranean</p>
-
-                                                <p class="block-1__item-text"><span class="block-1__item-text-text">Ingredients: </span>
-                                                    Brand sauce, pickled onion, ham, sausage, fresh Bulgarian pepper,
-                                                    champignons, mozzarella cheese, olives.</p>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-33" type="radio" data-price="9"
-                                                                   data-title="550 gr" class="radio" id="pizza-33"
-                                                                   value="pizza-33" checked="checked"/>
-                                                            <label for="pizza-33" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-33" type="radio" data-price="9"
-                                                                   data-title="1100 gr" class="radio" id="pizza-34"
-                                                                   value="pizza-33"/>
-                                                            <label for="pizza-34" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-5 col-md-5 col-sm-5">
-                                                        <div class="block-1__count">
-                                                            <div class="block-1__count-line block-1__count-left"></div>
-                                                            <div class="block-1__count-line block-1__count-center">
-                                                                <p>1</p>
-                                                            </div>
-                                                            <div class="block-1__count-line block-1__count-right"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="block-1__price">$9</p>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="btn btn-default block-1__button">Add to cart</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-4 col-sm-6">
-                                <div class="block-1__item">
-                                    <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
-
-                                    <div class="row">
-                                        <div class="clearfix">
-                                            <div class="col-lg-12">
-                                                <p class="block-1__item-title">mediterranean</p>
-
-                                                <p class="block-1__item-text"><span class="block-1__item-text-text">Ingredients: </span>
-                                                    Brand sauce, pickled onion, ham, sausage, fresh Bulgarian pepper,
-                                                    champignons, mozzarella cheese, olives.</p>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-35" type="radio" data-price="9"
-                                                                   data-title="550 gr" class="radio" id="pizza-35"
-                                                                   value="pizza-35" checked="checked"/>
-                                                            <label for="pizza-35" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-35" type="radio" data-price="9"
-                                                                   data-title="1100 gr" class="radio" id="pizza-36"
-                                                                   value="pizza-35"/>
-                                                            <label for="pizza-36" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-5 col-md-5 col-sm-5">
-                                                        <div class="block-1__count">
-                                                            <div class="block-1__count-line block-1__count-left"></div>
-                                                            <div class="block-1__count-line block-1__count-center">
-                                                                <p>1</p>
-                                                            </div>
-                                                            <div class="block-1__count-line block-1__count-right"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="block-1__price">$9</p>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="btn btn-default block-1__button">Add to cart</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-4 col-sm-6">
-                                <div class="block-1__item">
-                                    <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
-
-                                    <div class="row">
-                                        <div class="clearfix">
-                                            <div class="col-lg-12">
-                                                <p class="block-1__item-title">mediterranean</p>
-
-                                                <p class="block-1__item-text"><span class="block-1__item-text-text">Ingredients: </span>
-                                                    Brand sauce, pickled onion, ham, sausage, fresh Bulgarian pepper,
-                                                    champignons, mozzarella cheese, olives.</p>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-37" type="radio" data-price="9"
-                                                                   data-title="550 gr" class="radio" id="pizza-37"
-                                                                   value="pizza-37" checked="checked"/>
-                                                            <label for="pizza-37" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-37" type="radio" data-price="9"
-                                                                   data-title="1100 gr" class="radio" id="pizza-38"
-                                                                   value="pizza-37"/>
-                                                            <label for="pizza-38" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-5 col-md-5 col-sm-5">
-                                                        <div class="block-1__count">
-                                                            <div class="block-1__count-line block-1__count-left"></div>
-                                                            <div class="block-1__count-line block-1__count-center">
-                                                                <p>1</p>
-                                                            </div>
-                                                            <div class="block-1__count-line block-1__count-right"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="block-1__price">$9</p>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="btn btn-default block-1__button">Add to cart</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-4 col-sm-6">
-                                <div class="block-1__item">
-                                    <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
-
-                                    <div class="row">
-                                        <div class="clearfix">
-                                            <div class="col-lg-12">
-                                                <p class="block-1__item-title">mediterranean</p>
-
-                                                <p class="block-1__item-text"><span class="block-1__item-text-text">Ingredients: </span>
-                                                    Brand sauce, pickled onion, ham, sausage, fresh Bulgarian pepper,
-                                                    champignons, mozzarella cheese, olives.</p>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-39" type="radio" data-price="9"
-                                                                   data-title="550 gr" class="radio" id="pizza-39"
-                                                                   value="pizza-39" checked="checked"/>
-                                                            <label for="pizza-39" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-39" type="radio" data-price="9"
-                                                                   data-title="1100 gr" class="radio" id="pizza-40"
-                                                                   value="pizza-39"/>
-                                                            <label for="pizza-40" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-5 col-md-5 col-sm-5">
-                                                        <div class="block-1__count">
-                                                            <div class="block-1__count-line block-1__count-left"></div>
-                                                            <div class="block-1__count-line block-1__count-center">
-                                                                <p>1</p>
-                                                            </div>
-                                                            <div class="block-1__count-line block-1__count-right"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="block-1__price">$9</p>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="btn btn-default block-1__button">Add to cart</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-4 col-sm-6">
-                                <div class="block-1__item">
-                                    <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
-
-                                    <div class="row">
-                                        <div class="clearfix">
-                                            <div class="col-lg-12">
-                                                <p class="block-1__item-title">mediterranean</p>
-
-                                                <p class="block-1__item-text"><span class="block-1__item-text-text">Ingredients: </span>
-                                                    Brand sauce, pickled onion, ham, sausage, fresh Bulgarian pepper,
-                                                    champignons, mozzarella cheese, olives.</p>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-41" type="radio" data-price="9"
-                                                                   data-title="550 gr" class="radio" id="pizza-41"
-                                                                   value="pizza-41" checked="checked"/>
-                                                            <label for="pizza-41" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-41" type="radio" data-price="9"
-                                                                   data-title="1100 gr" class="radio" id="pizza-42"
-                                                                   value="pizza-41"/>
-                                                            <label for="pizza-42" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-5 col-md-5 col-sm-5">
-                                                        <div class="block-1__count">
-                                                            <div class="block-1__count-line block-1__count-left"></div>
-                                                            <div class="block-1__count-line block-1__count-center">
-                                                                <p>1</p>
-                                                            </div>
-                                                            <div class="block-1__count-line block-1__count-right"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="block-1__price">$9</p>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="btn btn-default block-1__button">Add to cart</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-4 col-sm-6">
-                                <div class="block-1__item">
-                                    <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
-
-                                    <div class="row">
-                                        <div class="clearfix">
-                                            <div class="col-lg-12">
-                                                <p class="block-1__item-title">mediterranean</p>
-
-                                                <p class="block-1__item-text"><span class="block-1__item-text-text">Ingredients: </span>
-                                                    Brand sauce, pickled onion, ham, sausage, fresh Bulgarian pepper,
-                                                    champignons, mozzarella cheese, olives.</p>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-43" type="radio" data-price="9"
-                                                                   data-title="550 gr" class="radio" id="pizza-43"
-                                                                   value="pizza-43" checked="checked"/>
-                                                            <label for="pizza-43" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-43" type="radio" data-price="9"
-                                                                   data-title="1100 gr" class="radio" id="pizza-44"
-                                                                   value="pizza-43"/>
-                                                            <label for="pizza-44" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-5 col-md-5 col-sm-5">
-                                                        <div class="block-1__count">
-                                                            <div class="block-1__count-line block-1__count-left"></div>
-                                                            <div class="block-1__count-line block-1__count-center">
-                                                                <p>1</p>
-                                                            </div>
-                                                            <div class="block-1__count-line block-1__count-right"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="block-1__price">$9</p>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="btn btn-default block-1__button">Add to cart</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-4 col-sm-6">
-                                <div class="block-1__item">
-                                    <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
-
-                                    <div class="row">
-                                        <div class="clearfix">
-                                            <div class="col-lg-12">
-                                                <p class="block-1__item-title">mediterranean</p>
-
-                                                <p class="block-1__item-text"><span class="block-1__item-text-text">Ingredients: </span>
-                                                    Brand sauce, pickled onion, ham, sausage, fresh Bulgarian pepper,
-                                                    champignons, mozzarella cheese, olives.</p>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-45" type="radio" data-price="9"
-                                                                   data-title="550 gr" class="radio" id="pizza-45"
-                                                                   value="pizza-45" checked="checked"/>
-                                                            <label for="pizza-45" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-45" type="radio" data-price="9"
-                                                                   data-title="1100 gr" class="radio" id="pizza-46"
-                                                                   value="pizza-45"/>
-                                                            <label for="pizza-46" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-5 col-md-5 col-sm-5">
-                                                        <div class="block-1__count">
-                                                            <div class="block-1__count-line block-1__count-left"></div>
-                                                            <div class="block-1__count-line block-1__count-center">
-                                                                <p>1</p>
-                                                            </div>
-                                                            <div class="block-1__count-line block-1__count-right"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="block-1__price">$9</p>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="btn btn-default block-1__button">Add to cart</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-4 col-sm-6">
-                                <div class="block-1__item">
-                                    <img src="img/pizza_1.png" alt="фото" class="block-1__item-image">
-
-                                    <div class="row">
-                                        <div class="clearfix">
-                                            <div class="col-lg-12">
-                                                <p class="block-1__item-title">mediterranean</p>
-
-                                                <p class="block-1__item-text"><span class="block-1__item-text-text">Ingredients: </span>
-                                                    Brand sauce, pickled onion, ham, sausage, fresh Bulgarian pepper,
-                                                    champignons, mozzarella cheese, olives.</p>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-7 col-md-7 col-sm-7">
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-47" type="radio" data-price="9"
-                                                                   data-title="550 gr" class="radio" id="pizza-47"
-                                                                   value="pizza-47" checked="checked"/>
-                                                            <label for="pizza-47" class="radio-label__top"></label>
-
-                                                            <p class="block-1__item-radio-text">Medium,<span
-                                                                    class="block-1__item-radio-text-text"> 550 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                        <br>
-
-                                                        <div class="block-1__item-radio">
-                                                            <input name="pizza-47" type="radio" data-price="9"
-                                                                   data-title="1100 gr" class="radio" id="pizza-48"
-                                                                   value="pizza-47"/>
-                                                            <label for="pizza-48" class="radio-label__bottom"></label>
-
-                                                            <p class="block-1__item-radio-text block-1__item-radio-text-otstup">
-                                                                Large,<span class="block-1__item-radio-text-text"> 1100 gr.</span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-5 col-md-5 col-sm-5">
-                                                        <div class="block-1__count">
-                                                            <div class="block-1__count-line block-1__count-left"></div>
-                                                            <div class="block-1__count-line block-1__count-center">
-                                                                <p>1</p>
-                                                            </div>
-                                                            <div class="block-1__count-line block-1__count-right"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="clearfix">
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="block-1__price">$9</p>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                        <p class="btn btn-default block-1__button">Add to cart</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="clearfix"></div>
-                            <div class="row number_page-top">
-                                <div class="col-lg-12 number_page">
-                                    <span class="number_page-text">3</span> of 3
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+                </div> <!-- gallery__image -->
+            </div> <!-- gallery__slide -->
+         
             <a href="#block-1" onclick="event.preventDefault()" class='gallery__link-left'>
-                <!-- onclick="prev(this)" -->
-                <svg class="gallery__svg">
-                    <line x1="0" y1="8" x2="32" y2="8" stroke-width="2" stroke="#7f7b76"/>
-                    <line x1="1" y1="8" x2="8" y2="0" stroke-width="2" stroke="#7f7b76"/>
-                    <line x1="1" y1="8" x2="8" y2="16" stroke-width="2" stroke="#7f7b76"/>
-                </svg>
+                <img src="img/arrow_gallery.png" alt="фото">
             </a>
             <a href="#block-1" onclick="event.preventDefault()" class='gallery__link-right'>
-                <!--  onclick="next(this)"  -->
-                <svg class="gallery__svg">
-                    <line x1="0" y1="8" x2="32" y2="8" stroke-width="2" stroke="#7f7b76"/>
-                    <line x1="23" y1="0" x2="31" y2="8" stroke-width="2" stroke="#7f7b76"/>
-                    <line x1="23" y1="16" x2="31" y2="8" stroke-width="2" stroke="#7f7b76"/>
-                </svg>
+                <img src="img/arrow_gallery.png" alt="фото">
             </a>
-        </div>   <!-- /.SLIDER -->
-    </div> <!-- /.Block-1 (pizza) -->
 
+        </div> <!-- /.SLIDER (gallery) -->
+    </div> <!-- /.Block-1 (pizza) -->
+    
+    
     <!-- Block-2 (snacks) -->
 
     <div class="container block-2">
