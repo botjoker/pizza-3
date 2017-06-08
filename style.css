@@ -473,6 +473,52 @@ button[type="button"]::-moz-focus-inner {
 	line-height: 24px;
 	text-align: left;
 }
+
+/*новое*/
+
+.__radio-row {
+	margin-left: -20px;
+}
+.__radio-item {
+	margin-bottom: -10px;
+}
+.__radio {
+	position: absolute;
+	opacity: 0;
+}
+.__radio + .__radio-label:before {
+	content: '';
+	background: #fff;
+	border-radius: 50%;
+	border: 1px solid #8b8782;
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	position: relative;
+	margin-left: -92px;
+    -webkit-transition: all 250ms ease;
+	transition: all 250ms ease;
+}
+.__radio:checked + .__radio-label:before {
+	background-color: #494135;
+	box-shadow: inset 0 0 0 2px #fff;
+}
+.__radio-text {
+	color:  #494135;
+	font-size: 13px;
+	font-weight: 600;
+	text-align: left;
+	margin-top: -21px;
+    margin-left: 33px;
+}
+.__radio-text-bottom {
+	margin-left: 25px;
+}
+.__radio-text-text {
+	color: #7f7b76;
+}
+
+/*старое*/
 .block-1__item-radio-text {
 	color:  #494135;
 	font-size: 13px;
