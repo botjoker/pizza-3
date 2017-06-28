@@ -437,11 +437,10 @@ button[type="button"]::-moz-focus-inner {
 	border-radius: 3px;
 	background: #fff;
 	position: relative;
-	z-index: 2;
 	text-align: center;
 }
 .block-1__title {
-	margin-top: 33px;
+	margin-top: 28px;
 	margin-bottom: -8px;
 }
 .block-1__title h2 {
@@ -600,8 +599,8 @@ button[type="button"]::-moz-focus-inner {
 .block-1__count {
 	width: 68px;
 	height: 18px;
-	margin-top: 1px;
-	margin-left: 12px;
+	margin-top: -3px;
+	margin-left: 7px;
 	border: 1px solid #7f7b76;
 	border-radius: 3px;
 	overflow: hidden;
@@ -661,7 +660,8 @@ button[type="button"]::-moz-focus-inner {
 	font-weight: 600;
 	line-height: 24px;
 	margin-top: 9px;
-	margin-left: -3px;
+	margin-left: 13px;
+	text-align: left;
 }
 .block-1__button {
 	width: 120px;
@@ -694,6 +694,8 @@ input[type="submit"]::-moz-focus-inner {
 .number_page-top {
     width: 750px;
     margin: 0 auto;
+	margin-top: -24px; 
+    margin-bottom: 17px;
 }
 .number_page {
 	word-spacing: 9.5px;
@@ -781,6 +783,9 @@ input[type="submit"]::-moz-focus-inner {
 	font-weight: 600;
 	line-height: 24px;
 }
+.main_quantity {
+	margin-top: 153px;
+}
 .quantity {
 	margin: 0;
 	padding-left: 13px;
@@ -810,7 +815,7 @@ input[type="submit"]::-moz-focus-inner {
 
 .block-3__line {
 	border-top: 1px dashed #7f7b76;
-	margin-top: 30px;
+	margin-top: 25px;
 }
 .block-3__item {
 	height: 333px;
@@ -824,6 +829,10 @@ input[type="submit"]::-moz-focus-inner {
 }
 .block-3__button {
 	margin-top: 5px;
+}
+.number_page-block-3 {
+	margin-top: -25px;
+    margin-bottom: 4px;
 }
 @media (max-width: 991px) {
 	#block-3 {
@@ -1194,12 +1203,9 @@ input[type="submit"]::-moz-focus-inner {
 .block-4__title h2 {
 	color: #fffbfb;
     font-size: 17px;
-    letter-spacing: 0.5px;
-    margin-top: 20px;
+    letter-spacing: 1.1px;
+    margin-top: 24px; 
     margin-bottom: 15px;
-}
-.block-4__title img {
-	margin-top: -10px;
 }
 .block-4__title-text {
 	margin-bottom: 8px;
@@ -1256,6 +1262,7 @@ input[type="submit"]::-moz-focus-inner {
 .block-4__text-bottom {
 	text-align: left;
 	margin: 12px 0 31px;
+	word-spacing: 1.4px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1448,7 +1455,6 @@ h3 {
     margin-bottom: 3px;
     margin-left: 10px;
     margin-top: 5px;
-    letter-spacing: -1.1px;
     word-spacing: 2.5px;
 }
 .star {
@@ -1594,7 +1600,7 @@ textarea {
 	width: 420px;
 	height: 640px;
 	border: 1px solid #8a8680;
-	border-radius: 3px;
+	border-radius: 6px;
 	padding: 9px;
 	margin-top: 23px;
     margin-left: 4px;
@@ -1951,6 +1957,9 @@ footer {
 	font-weight: 400;
 	line-height: 24px;
 	margin-top: -10px;
+}
+.footer__textarea-main {
+	position: relative;
 }
 .footer__textarea {
 	background: none;
