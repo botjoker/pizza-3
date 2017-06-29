@@ -5,9 +5,14 @@ $('#top-slider').slick({
 });
 
 $('#items-slider1').slick({
+    dots: true,
     prevArrow: '<span class="link-left">s</span>',
     nextArrow: '<span class="link-right">s</span>',
+    customPaging: function (slider, i) {
+        return  (i + 1) + '/' + slider.slideCount;
+    },
 });
+
 $('.gallery1__link-right').click(function(){
     $('#items-slider1').slick("slickNext");
 });
@@ -19,11 +24,11 @@ $('.gallery1__link-left').click(function(){
 $('#items-slider2').slick({
     slidesToShow: 4,
     slidesToScroll: 4,
+    dots: true,
     prevArrow: '<span class="link-left">s</span>',
     nextArrow: '<span class="link-right">s</span>',
 
     customPaging: function (slider, i) {
-        console.log(i);
         return  (i + 1) + '/' + slider.slideCount;
     },
 
@@ -31,6 +36,7 @@ $('#items-slider2').slick({
 $('.gallery2__link-right').click(function(){
     $('#items-slider2').slick("slickNext");
 });
+
 $('.gallery2__link-left').click(function(){
     $('#items-slider2').slick("slickPrev");
 });
@@ -40,8 +46,12 @@ $('.gallery2__link-left').click(function(){
 $('#items-slider3').slick({
     slidesToShow: 4,
     slidesToScroll: 4,
+    dots: true,
     prevArrow: '<span class="link-left">s</span>',
     nextArrow: '<span class="link-right">s</span>',
+    customPaging: function (slider, i) {
+        return  (i + 1) + '/' + slider.slideCount;
+    },
 });
 
 $('.gallery3__link-right').click(function(){
