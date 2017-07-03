@@ -493,6 +493,7 @@ button[type="button"]::-moz-focus-inner {
 }
 .__radio-item {
 	margin-bottom: -11px;
+	/*margin-top: 5px;*/
 }
 .__radio {
 	position: absolute;
@@ -522,6 +523,7 @@ button[type="button"]::-moz-focus-inner {
 	text-align: left;
 	margin-top: -19px;
     margin-left: 33px;
+	/*padding-top: 2px;*/ 
 }
 .__radio-text-bottom {
 	margin-left: 25px;
@@ -692,10 +694,10 @@ input[type="submit"]::-moz-focus-inner {
   border: 0 !important;
 }
 .number_page-top {
-    width: 750px;
-    margin: 0 auto;
-	margin-top: -24px; 
-    margin-bottom: 17px;
+  width: 750px;
+  margin: 0 auto;
+	margin-top: -30px; 
+  margin-bottom: 17px;
 }
 .number_page {
 	word-spacing: 9.5px;
@@ -706,6 +708,23 @@ input[type="submit"]::-moz-focus-inner {
 }
 .number_page-text {
 	color:  #a84238;
+}
+.gallery__slide .slick-dots li {
+	list-style: none;
+	position: absolute;
+	margin-top: -19px;
+}
+.gallery__slide .slick-active {
+	/*word-spacing: 9.5px;*/
+	color:  #a84238;
+  font-size: 15px;
+  font-weight: 600;
+  /*line-height: 17px;*/
+  width: 100%;
+  margin: 0 auto;
+}
+.gallery__slide .slick-active span {
+	color: #7f7b76;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -831,8 +850,8 @@ input[type="submit"]::-moz-focus-inner {
 	margin-top: 5px;
 }
 .number_page-block-3 {
-	margin-top: -25px;
-    margin-bottom: 4px;
+	margin-top: -30px; 
+  margin-bottom: 4px;
 }
 @media (max-width: 991px) {
 	#block-3 {
