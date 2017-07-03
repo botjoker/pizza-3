@@ -9,7 +9,7 @@ $('#items-slider1').slick({
     prevArrow: '<span class="link-left">s</span>',
     nextArrow: '<span class="link-right">s</span>',
     customPaging: function (slider, i) {
-        return  (i + 1) + '<span> of ' + slider.slideCount + '</span>';
+        return  (i + 1) + '<span> of ' + Math.round(slider.slideCount) + '</span>';
     },
 });
 
@@ -29,7 +29,7 @@ $('#items-slider2').slick({
     nextArrow: '<span class="link-right">s</span>',
 
     customPaging: function (slider, i) {
-        return  (i + 1) + ' <span> of ' + slider.slideCount/4 + '</span>';
+        return  (i + 1) + ' <span> of ' + Math.round(slider.slideCount/4) + '</span>';
     },
 
 });
@@ -50,7 +50,7 @@ $('#items-slider3').slick({
     prevArrow: '<span class="link-left">s</span>',
     nextArrow: '<span class="link-right">s</span>',
     customPaging: function (slider, i) {
-        return  (i + 1) + '<span> of ' + slider.slideCount/4 + '</span>';
+        return  (i + 1) + '<span> of ' + Math.round(slider.slideCount/4) + '</span>';
     },
 });
 
