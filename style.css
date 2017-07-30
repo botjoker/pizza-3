@@ -80,6 +80,12 @@ header {
 		padding-left: 5px;
 	}
 }
+.my_container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
 /**************/
 /*HEADER__MENU*/
 /**************/
@@ -98,7 +104,7 @@ header {
 	display: block;
 	list-style: none;
 	padding-right: 44px;
-    letter-spacing: -0.3px;
+  letter-spacing: -0.3px;
 }
 .menu__top img {
 	padding-top: 15px;
@@ -151,14 +157,25 @@ header {
 #touch-menu {
 	display: none;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+	.menu__top-list-item {
+		padding-right: 25px;
+	}
+}
 @media (max-width: 991px) {
 	#touch-menu {
 		display: block;
-		margin-left: 675px;
-		margin-top: -45px;
+		float: right;
+		margin-right: 2px;
+		margin-top: 35px;
 	}
 	.last__item {
-		margin-right: 300px;
+		margin-top: 35px;
+		margin-left: 27%;
+		float: left;
+	}
+	.menu__top img {
+		float: left;
 	}
 	.menu__top-list li {
 	float: none;
@@ -167,12 +184,12 @@ header {
 		display: none;
 		position: absolute;
 		z-index: 2;
-		margin-top: 15px;
 		background-color: rgba(26, 24, 23, 0.9);
-		width: 760px;
+		width: 98%;
+		margin: auto;
 		height: 370px;
 		text-align: center;
-		margin-left: -12px;
+		margin-top: 105px;
 	}
 	.menu__top-list-item {
 		margin-bottom: 20px;
@@ -200,18 +217,16 @@ header {
 		height: 59px;
 	}
 	#touch-menu {
-		margin-left: 240px;
-		margin-top: -37px;
+		margin-top: 20px;
+	}
+	.last__item {
+		margin-top: 20px;
 	}
 	.menu__top img {
 		width: 70px;
 		height: auto;
 		padding-top: 3px;
 		left: 0;
-	}
-	.last__item {
-		margin-right: 90px;
-		margin-top: -35px;
 	}
 	.phone_delivery {
 		display: none;
@@ -220,7 +235,7 @@ header {
 		font-size: 10px;
 	}
 	.phone__number {
-		font-size: 10px !important;
+		font-size: 12px !important;
 	}
 	.divide {
 		width: 31px;
@@ -228,17 +243,36 @@ header {
 		margin: 3px 0;
 	}
 	.menu__top-list {
-		margin-top: 5px;
-		width: 320px;
-		height: 400px;
-		margin-left: -15px;
+		margin-top: 57px;
+    width: 97%;
+    height: 400px;
 	}
 	.active {
 		margin-top: 55px;
 	}
 	.menu__top-list-item {
-		margin-left: 40px;
+		margin-left: 0;
+		padding-right: 0;
 	}
+	.last__item {
+    margin-left: 30%;
+	}
+}
+@media (max-width: 550px) {
+	.menu__top-list {
+		width: 95%;
+  }
+}
+@media (max-width: 400px) {
+	.phone__number {
+		font-size: 10px !important;
+	}
+	.last__item {
+		margin-left: 15%;
+	}
+	.menu__top-list {
+		width: 93%;
+  }
 }
 /****************/
 /*HEADER__SLIDER*/
